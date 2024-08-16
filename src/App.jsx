@@ -18,6 +18,7 @@ export default function App() {
   const [num , setNum]= useState(0);
   console.log(setNum);
   
+  const cancel = ()=> setNum(num*0)
   const plus1 = ()=> setNum(num+1)
   const plus2 = ()=> setNum(num+2)
   const plus3 = ()=> setNum(num+3)
@@ -37,19 +38,22 @@ console.log(num);
       
     <ThemeText>
     <h2 className='center'>{num}</h2>
+    <br/>
+    <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={cancel}>Ce</button>
+    <br/>
     
+    <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus1}>1</button>
+    <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus2}> 2</button>
+    <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus3}> 3</button>
+   
     <br/>
-    <button className='mr-5 p-3 bg-gray-100 border border-gray-200 rounded' onClick={plus1}>1</button>
-    <button className='mr-5 p-3 bg-gray-100 border border-gray-200 rounded' onClick={plus2}> 2</button>
-    <button className='mr-5 p-3 bg-gray-100 border border-gray-200 rounded' onClick={plus3}> 3</button>
+    <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus4}> 4</button>
+    <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus5}> 5</button>
+    <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus6}> 6</button>
     <br/>
-    <button className='mr-5 p-3 bg-gray-100 border border-gray-200 rounded mt-3' onClick={plus4}> 4</button>
-    <button className='mr-5 p-3 bg-gray-100 border border-gray-200 rounded mt-3' onClick={plus5}> 5</button>
-    <button className='mr-5 p-3 bg-gray-100 border border-gray-200 rounded mt-3' onClick={plus6}> 6</button>
-    <br/>
-    <button className='mr-5 p-3 bg-gray-100 border border-gray-200 rounded mt-3' onClick={plus7}> 7</button>
-    <button className='mr-5 p-3 bg-gray-100 border border-gray-200 rounded mt-3' onClick={plus8}> 8</button>
-    <button className='mr-5 p-3 bg-gray-100 border border-gray-200 rounded mt-3' onClick={plus9}> 9</button>
+    <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus7}> 7</button>
+    <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus8}> 8</button>
+    <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus9}> 9</button>
     
     {/* <Button onClick={plus3}  text="help"></Button> */}
    {/* <Button onClick={plus3} text={"three"} ></Button> */}
