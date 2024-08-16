@@ -39,7 +39,7 @@ console.log(num);
     <ThemeText>
     <h2 className='center'>{num}</h2>
     <br/>
-    <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={cancel}>Ce</button>
+    <button className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900" onClick={cancel}>Ce</button>
     <br/>
     
     <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus1}>1</button>
@@ -54,8 +54,14 @@ console.log(num);
     <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus7}> 7</button>
     <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus8}> 8</button>
     <button className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={plus9}> 9</button>
+    <br/>
+    <br/>
+    <Button onClick={'plus3'}  text={"Blue"}></Button>
+    <Button onClick={'plus3'}  text="Orange" bgColor={'bg-orange-500'} hover={'hover:bg-orange-400'}></Button>
+    <Button onClick={plus3}  text="Green" bgColor={'bg-green-500'} hover={'hover:bg-green-400'}></Button>
+    <Button onClick={plus3}  text="Yellow" bgColor={'bg-yellow-500'} hover={'hover:bg-yellow-400'}></Button>
+    <Button onClick={plus3}  text="Red" bgColor={'bg-red-500'} hover={'hover:bg-red-400'}></Button>
     
-    {/* <Button onClick={plus3}  text="help"></Button> */}
    {/* <Button onClick={plus3} text={"three"} ></Button> */}
    </ThemeText>
     </div>
